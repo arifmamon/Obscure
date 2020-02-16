@@ -1,0 +1,188 @@
+{% load staticfiles %}
+{% csrf_token %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>ADMISSION</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="css/home.css">
+<link rel="stylesheet" type="text/css" href="css/admission.css">
+
+
+</head>
+
+        <h1>Murshidabad College Of Engineering And Technology</h1>
+  
+
+<body>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static '15.jpg'%}" alt="Los Angeles" width="1000" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '9.jpg'%}" alt="Chicago" width="1000" height="500">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '13.jpg'%}" alt="New York" width="1000" height="500">
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+  </div>
+    
+  <meta name="viewport" content="width=device-width, initial-scale=1">   
+   
+    <div class="row">
+    <div class="col-md-12">
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <!-- Brand -->
+            <a class="navbar-brand" href="/">Home</a>
+
+          
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/about/">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/faculty/">Faculty</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/campus/">Campus</a>
+                </li> 
+                <li class="nav-item">
+                  <a class="nav-link" href="/facility/">Facilities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/placement/">Placement</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact/">Contact Us</a>    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admission/">Admission</a>
+                </li>
+                <li class="nav-item">
+                    <a href="nav-link" data-toggle="modal" data-target="#Login">Admin</a>
+                </li>
+              </ul>
+            </div> 
+          </nav>
+    </div>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+
+ <!-- The Modal-------SIGN IN -->
+        
+
+ 
+  <div class="col-md-12">
+    <h4 class="form admission">Admission</h4>
+    </div>
+
+<div class="container">
+  <div class="admissionform">
+    <form class="contact-form validate-form">
+    <span class="contact-form-title">
+      " Form "
+    </span>
+      <div class="wrap-input validate-input" data-validate="Please Enter Your Name">
+      <input class="input" type="text" name="name" placeholder="Full name">
+      <span class="focus-input"></span>
+      </div>
+
+    
+    <p>Gender</p>
+    
+    <label class="row-md-6">
+    <input type="radio" name="mradio">Male
+    </label> 
+    <label class="row-md-6">
+    <input type="radio" name="fradio">Female
+    </label>
+    
+
+    <div class="wrap-input validate-input" data-validate="Please Enter Your father's Name">
+    <input class="input" type="text" name="fathername" placeholder="Father name">
+    <span class="focus-input">
+
+    </span>
+    </div>
+
+    <div class="wrap-input validate-input" data-validate="Please Enter Mother's Name">
+    <input class="input" type="text" name="mothername" placeholder="Mother's name">
+    <span class="focus-input">
+
+    </span>
+    </div>
+
+    <div class="wrap-input validate-input" data-validate="Please Enter phone Number">
+    <input class="input" type="number" name="phone" placeholder="Phone Number">
+    <span class="focus-input">
+
+    </span>
+    </div>
+    <div class="container-contact-form-btn">
+      <button class="contact-form-btn">
+        <span>
+          <i class="fa fa-paper-plane-o m-r-6" aria-hidden="true"></i>
+          Send
+        </span>
+      </button>
+    </div>
+    
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+  <div class="col-sm-12 align-center">
+    
+      <p>
+       Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Html Project is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Arif :)</a>
+      </p>
+    </div>
+
+
+
+</body>
+</html>
